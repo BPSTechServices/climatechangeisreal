@@ -4,17 +4,29 @@ This repository contains copies of the climate change websites, data, and other 
 
 This repository allows others to republish information on climate change on their own website, such as [cityofchicago.org/climatechangeisreal](https://www.cityofchicago.org/climatechangeisreal), so people can still access this vital information. Republishing this information across multiple organizations helps raise the profile of climate change risks even higher and makes a statement that the science that demonstrates the rise in global temperatures cannot simply be deleted.
 
+A list of cities who republished these websites are available [here](cities.md).
+
 ## Contributing Changes
 
 We invite others to help maintain this repository. If you notice any broken links, missing pages, or if more pages were removed, please [open an issue](/issues) or [submit a pull request](/pulls).
 
 ## Hosting climatechangeisreal
 
-We recommend that these websites are not hosting within your content management system (CMS). Since these are static files, they can be hosted on a web server with some simple configuration.
+There are two ways the website can be hosted in your own domain by either embedding an existing website or hosting the files on your own web servers.
+
+### Embed Website
+
+An unbranded, static copy of the website is hosted at http://climatechangeisreal.s3-website.us-east-2.amazonaws.com/. This website can be embedded using an `<iframe>` on your domain. These files are updated once this repository is updated, ensuring minimal long-term maintenance.
+
+Please note, this is hosted on an "http" URL, so it will result in mixed-content warnings if embedded on "https" sites. 
+
+### Host Your Own
 
 To begin, clone the repository to your preferred web server with `git clone https://github.com/Chicago/climatechangeisreal.git`.
 
 Configure your web server using the following instructions. We also recommend that you automatically update the repository on a regular basis with a cron job or scheduled task with `git pull origin master`.
+
+If git is not a viable solution, you can also simply [download the entire contents](https://github.com/Chicago/climatechangeisreal/archive/master.zip) as a ZIP file.
 
 #### Apache
 
